@@ -1,0 +1,8 @@
+<ul>
+  <li ng-repeat="foo in vm.foos track by foo._id">
+    <a ng-click="vm.selectFoo(foo._id)">{{foo.name}}</a>
+  </li>
+</ul>
+
+
+<foo-details ng-if="vm.activeFooId" foo-id="vm.activeFooId"></foo-details>
